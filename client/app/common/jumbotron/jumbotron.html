@@ -1,0 +1,13 @@
+<div ng-style="$ctrl.myStyle" class="section jumbotron">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    {{$ctrl.jumboTitle}}
+                </h1>
+                <h2 class="subtitle">
+                    <div ng-include="$ctrl.contentPath"></div>
+                    <!--{{$ctrl.content}}-->
+                </h2>
+            </div>
+        </div>
+</div>
