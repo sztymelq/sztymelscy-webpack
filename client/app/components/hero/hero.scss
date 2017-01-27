@@ -1,0 +1,14 @@
+.hero {
+  .hero-body{
+    padding: 0;
+    position: relative;
+  }
+
+  .countdown-clock {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    justify-content: center;
+    opacity: 0.5;
+  }
+}
