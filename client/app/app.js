@@ -5,6 +5,7 @@ import Components from './components/components';
 import AppComponent from './app.component';
 import 'normalize.css';
 
+require("script-loader!../../node_modules/flipclock/compiled/flipclock.js");
 
 angular.module('app', [
     uiRouter,
