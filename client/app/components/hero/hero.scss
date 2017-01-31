@@ -1,10 +1,23 @@
 .hero {
-  .hero-body{
+  .hero-body {
     padding: 0;
     position: relative;
+
+    .hero-image.ng-hide-remove {
+        transition: all 1s linear;
+    }
+
+    .hero-image.ng-hide-remove {
+      opacity: 0;
+    }
+
+    .hero-image.ng-hide-remove-active {
+      opacity: 1;
+    }
   }
 
   .countdown-clock {
+    z-index: 2;
     position: absolute;
     display: flex;
     top: 50%;

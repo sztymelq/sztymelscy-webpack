@@ -1,6 +1,9 @@
 <section class="hero">
     <div class="hero-body">
         <div class="countdown-clock"></div>
-        <img ng-src="{{$ctrl.getCurrentImagePath()}}">
+        <img class="hero-image"
+             ng-repeat="name in $ctrl.images track by $index"
+             ng-show="$ctrl.isCurrentImage(name)"
+             ng-src="{{$ctrl.computeImagePath(name)}}">
     </div>
 </section>

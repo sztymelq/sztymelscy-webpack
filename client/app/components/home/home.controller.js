@@ -6,14 +6,13 @@ class HomeController {
   }
 
   $onInit() {
-      const smCtrl = new ScrollMagic.Controller();
+      // const smCtrl = new ScrollMagic.Controller();
+      //
+      // new ScrollMagic.Scene({triggerElement: "#trigger"})
+      //     .setVelocity(".section.jumbotron", {opacity: 0}, {duration: 400})
+      //     .addTo(smCtrl);
 
-      new ScrollMagic.Scene({triggerElement: "#trigger"})
-          .setVelocity(".section.jumbotron", {opacity: 0}, {duration: 400})
-          .addTo(smCtrl);
-
-    console.log('on init!');
-    console.log('ScrollMagic', ScrollMagic);
+    // console.log('ScrollMagic', ScrollMagic);
   }
 }
 
