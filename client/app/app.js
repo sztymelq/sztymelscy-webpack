@@ -9,6 +9,7 @@ import 'normalize.css';
 require("script-loader!../../node_modules/jquery/dist/jquery.min.js");
 require("script-loader!../../node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js");
 require("script-loader!../../node_modules/scrollmagic/scrollmagic/minified/plugins/animation.velocity.min.js");
+// require("script-loader!../../node_modules/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js");
 require("script-loader!../../node_modules/flipclock/compiled/flipclock.js");
 
 angular.module('app', [
