@@ -5,6 +5,22 @@ class HomeController {
     this.name = 'home';
     this.items = constants.items;
     this.scrollMagicController = new ScrollMagic.Controller();
+
+    this.timeMock = {
+      months: 2,
+      days: 4,
+      hours: 5,
+      minutes: 32,
+      seconds: 21
+    };
+
+    this.time = [
+      { id: 'months', name: 'Miesiące', value: 3 },
+      { id: 'days', name: 'Dni', value: 2 },
+      { id: 'hours', name: 'Godziny', value: 12 },
+      { id: 'minutes', name: 'Minuty', value: 21 },
+      { id: 'seconds', name: 'Sekundy', value: 34 }
+    ];
   }
 
   $onInit() {
