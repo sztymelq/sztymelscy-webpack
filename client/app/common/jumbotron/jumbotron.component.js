@@ -2,16 +2,15 @@ import template from './jumbotron.html';
 import controller from './jumbotron.controller';
 import './jumbotron.scss';
 
-let jumbotronComponent = {
+export default {
   restrict: 'E',
   bindings: {
-      jumboTitle: '@',
-      content: '@',
-      contentPath: '@',
-      color: '@'
+    jumboTitle: '@',
+    contentPath: '@',
+    color: '@',
+    icon: '@',
+    name: '@'
   },
   template,
   controller
 };
-
-export default jumbotronComponent;

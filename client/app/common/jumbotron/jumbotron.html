@@ -1,13 +1,17 @@
-<div ng-style="$ctrl.myStyle" class="section jumbotron">
-        <div class="hero-body">
-            <div class="container">
-                <h1 class="title">
-                    <strong>{{$ctrl.jumboTitle}}</strong>
-                </h1>
-                <h2 class="subtitle">
-                    <div ng-include="$ctrl.contentPath"></div>
-                    <!--{{$ctrl.content}}-->
-                </h2>
-            </div>
+<div ng-style="$ctrl.myStyle" class="hero jumbotron">
+  <div class="hero-body">
+    <div class="container">
+      <div class="box">
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical is-2 tile-icon">
+            <i class="{{$ctrl.icon}}"></i>
+          </div>
+          <div class="tile is-vertical is-8">
+            <h1 class="title">{{$ctrl.jumboTitle}}</h1>
+            <div ng-include="$ctrl.contentPath"></div>
+          </div>
         </div>
+      </div>
+    </div>
+  </div>
 </div>

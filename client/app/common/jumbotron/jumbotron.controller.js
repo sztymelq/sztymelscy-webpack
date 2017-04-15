@@ -1,6 +1,6 @@
 class JumbotronController {
   constructor() {
-      this.myStyle = {"background-color": this.color};
+    this.myStyle = { 'background-color': this.color };
   }
 }
 

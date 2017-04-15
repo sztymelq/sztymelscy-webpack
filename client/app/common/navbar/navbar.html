@@ -12,20 +12,8 @@
     </span>
 
     <div class="nav-right nav-menu">
-        <a class="nav-item" href="#onas">
-            O nas
-        </a>
-        <a class="nav-item" href="#slub">
-            Ślub
-        </a>
-        <a class="nav-item" href="#wesele">
-            Wesele
-        </a>
-        <a class="nav-item" href="#dojazd">
-            Dojazd
-        </a>
-        <a class="nav-item" href="#zakwaterowanie">
-            Zakwaterowanie
-        </a>
+      <a ng-repeat="item in $ctrl.items" class="nav-item" href="{{item.href}}">
+        <i class="{{item.icon}}"></i>{{item.name}}
+      </a>
     </div>
 </nav>

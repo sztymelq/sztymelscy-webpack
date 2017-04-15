@@ -1,8 +1,23 @@
 @import '../common';
 
 .jumbotron {
-  //background: $accentColor !important;
   opacity: 0.1;
   text-align: center;
   height: 100vh;
+  display: flex;
+  align-items: center;
+
+  .hero-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+      width: 100%;
+    }
+  }
+
+  .tile-icon {
+    justify-content: center;
+  }
 }
