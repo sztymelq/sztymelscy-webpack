@@ -1,21 +1,22 @@
 <navbar></navbar>
 <header>
-
-
-
-  <!--<hero></hero>-->
+  <hero></hero>
 </header>
 <main>
     <div id="slub-trigger" class="trigger"></div>
     <jumbotron id="slub" name="slub" color="aliceblue" icon="fa fa-heart fa-5x" jumbo-title="Ślub" content-path="partials/slub.html"></jumbotron>
+
+
+    <div class="wedding-date">
+      <i class="fa fa-clock-o fa-2x"></i>
+      <span>5 sierpień 2017 16:00</span>
+    </div>
 
     <div class="wedding-countdown">
       <div ng-repeat="digit in $ctrl.time" class="tile is-2 digit-container">
         <div class="digit">{{digit.value}}</div>
         <div class="digit-description">{{digit.name}}</div>
       </div>
-
-      <!--2 miesiace 21 dni 3 godziny 23 minuty 5 sekund-->
     </div>
     <div id="wesele-trigger" class="trigger"></div>
     <jumbotron id="wesele" name="wesele" color="aliceblue" icon="fa fa-glass fa-5x" jumbo-title="Wesele" content-path="partials/wesele.html"></jumbotron>

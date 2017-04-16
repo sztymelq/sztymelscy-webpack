@@ -1,18 +1,13 @@
 import constants from '../../common/constants';
 
 class HomeController {
-  constructor() {
+  constructor($interval) {
     this.name = 'home';
+    this.$interval = $interval;
     this.items = constants.items;
     this.scrollMagicController = new ScrollMagic.Controller();
 
-    this.timeMock = {
-      months: 2,
-      days: 4,
-      hours: 5,
-      minutes: 32,
-      seconds: 21
-    };
+    this.weddingDate = new Date(2017, 7, 5, 16, 0, 0, 0);
 
     this.time = [
       { id: 'months', name: 'Miesiące', value: 3 },
@@ -23,7 +18,17 @@ class HomeController {
     ];
   }
 
+  onCountdownChange() {
+    const timeRemaining = countdown(this.weddingDate);
+
+    this.time = this.time.map((timeItem) => {
+      timeItem.value = timeRemaining[timeItem.id];
+      return timeItem;
+    });
+  }
+
   $onInit() {
+    this.$interval(this.onCountdownChange.bind(this), 1000);
     this.registerVelocity('slub');
     this.registerVelocity('wesele');
     this.registerVelocity('dojazd');
@@ -42,5 +47,7 @@ class HomeController {
       .addTo(this.scrollMagicController);
   }
 }
+
+HomeController.$inject = ['$interval'];
 
 export default HomeController;
