@@ -1,19 +1,30 @@
-<nav class="nav navigation-bar">
-    <div class="nav-left">
-        <a class="nav-item is-brand" href="#">
-            <img src="/images/logo.png">
+<nav ng-class="{'nav': true, 'navigation-bar': true, 'fixed-top': $ctrl.isFixedTop }">
+    <!--<div class="nav-left">-->
+        <!--<a class="nav-item is-brand" href="#">-->
+            <!--<img src="/images/logo.png">-->
+        <!--</a>-->
+    <!--</div>-->
+
+    <!--<span class="nav-toggle">-->
+        <!--<span></span>-->
+        <!--<span></span>-->
+        <!--<span></span>-->
+    <!--</span>-->
+
+    <!--<div class="navigation-content">-->
+      <!--<a ng-repeat="item in $ctrl.items" class="nav-item" href="{{item.href}}">-->
+        <!--<i class="{{item.icon}}"></i> <strong>{{item.name}}</strong>-->
+        <!--<div class="navigation-separator"></div>-->
+      <!--</a>-->
+    <!--</div>-->
+
+    <div class="navigation-content">
+      <div ng-repeat="item in $ctrl.items" class="tile is-3 navigation-item">
+        <a href="{{item.href}}">
+          <i class="{{item.icon}}"></i>
+          <strong>{{item.name}}</strong>
         </a>
-    </div>
-
-    <span class="nav-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-    </span>
-
-    <div class="nav-right nav-menu">
-      <a ng-repeat="item in $ctrl.items" class="nav-item" href="{{item.href}}">
-        <i class="{{item.icon}}"></i>{{item.name}}
-      </a>
+        <div ng-if="::item.name !== 'Zakwaterowanie'" class="navigation-separator"></div>
+      </div>
     </div>
 </nav>

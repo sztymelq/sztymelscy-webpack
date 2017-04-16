@@ -5,9 +5,9 @@ class HeroController {
     this.currentImage = 1;
     this.images = [...Array(this.maxImages).keys()];
 
-    $interval(() => {
-      this.currentImage = (this.currentImage + 1) % this.maxImages;
-    }, SLIDES_INTERVAL);
+    // $interval(() => {
+    //   this.currentImage = (this.currentImage + 1) % this.maxImages;
+    // }, SLIDES_INTERVAL);
   }
 
   $onInit() {
