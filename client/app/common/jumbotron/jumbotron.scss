@@ -2,12 +2,15 @@
 
 .jumbotron {
   opacity: 0.1;
+  //filter: blur(5px);
   text-align: center;
+  width: 50%;
   height: 100vh;
   display: flex;
   align-items: center;
 
   .hero-body {
+    background: $primaryColor;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,10 +1,17 @@
+@import '../../app';
+
 .hero {
   .hero-body {
+    background: $primaryColor;
     padding: 0;
     position: relative;
 
     .hero-image {
-      max-height: 90vh;
+      background-size: cover;
+      height: 90vh;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
     }
 
     .hero-image.ng-hide-remove {
@@ -28,4 +35,12 @@
     justify-content: center;
     opacity: 0.5;
   }
+}
+
+.blurred {
+  -webkit-filter: blur(20px);
+  -moz-filter: blur(20px);
+  -o-filter: blur(20px);
+  -ms-filter: blur(20px);
+  filter: blur(20px);
 }
