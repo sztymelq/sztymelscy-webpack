@@ -21,28 +21,11 @@ class HeroController {
     this.$timeout(() => {
       this.logoWelcomeVisible = true;
     }, 2500);
-
-    // const weddingDate = new Date(2017, 7, 5, 16, 0, 0, 0);
-    // const MS_PER_DAY = 1000;
-    // new FlipClock($('.countdown-clock'), (weddingDate - new Date()) / MS_PER_DAY, {
-    //   countdown: true,
-    //   clockFace: 'DailyCounter'
-    // });
-    //
-    // const labels = $('.flip-clock-label');
-    // labels[0].innerHTML = 'Dni';
-    // labels[1].innerHTML = 'Godziny';
-    // labels[2].innerHTML = 'Minuty';
-    // labels[3].innerHTML = 'Sekundy';
   }
 
   computeImageBackground(number) {
     return `url("/images/${number}.JPG")`;
   }
-
-  // computeImagePath(name) {
-  //   return `/images/${name}.JPG`;
-  // }
 
   isCurrentImage(name) {
     return this.currentImage === name;

@@ -16,7 +16,7 @@
     }
 
     .hero-image.ng-hide-remove {
-      transition: all 1s linear;
+      transition: all;
     }
 
     .hero-image.ng-hide-remove {
@@ -47,7 +47,7 @@
 }
 
 .logo-names {
-  transition: all 1s linear;
+  transition: 1s linear;
   position: absolute;
   top: 60vh;
   width: 50vw;
@@ -62,7 +62,7 @@
 }
 
 .logo-welcome {
-  transition: all 1s linear;
+  transition: 1s linear;
   position: absolute;
   top: 72vh;
   width: 20vw;

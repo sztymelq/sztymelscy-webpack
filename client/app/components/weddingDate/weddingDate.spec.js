@@ -1,0 +1,49 @@
+import WeddingDateModule from './weddingDate'
+import WeddingDateController from './weddingDate.controller';
+import WeddingDateComponent from './weddingDate.component';
+import WeddingDateTemplate from './weddingDate.html';
+
+describe('WeddingDate', () => {
+  let $rootScope, makeController;
+
+  beforeEach(window.module(WeddingDateModule));
+  beforeEach(inject((_$rootScope_) => {
+    $rootScope = _$rootScope_;
+    makeController = () => {
+      return new WeddingDateController();
+    };
+  }));
+
+  describe('Module', () => {
+    // top-level specs: i.e., routes, injection, naming
+  });
+
+  describe('Controller', () => {
+    // controller specs
+    it('has a name property [REMOVE]', () => { // erase if removing this.name from the controller
+      let controller = makeController();
+      expect(controller).to.have.property('name');
+    });
+  });
+
+  describe('Template', () => {
+    // template specs
+    // tip: use regex to ensure correct bindings are used e.g., {{  }}
+    it('has name in template [REMOVE]', () => {
+      expect(WeddingDateTemplate).to.match(/{{\s?\$ctrl\.name\s?}}/g);
+    });
+  });
+
+  describe('Component', () => {
+      // component/directive specs
+      let component = WeddingDateComponent;
+
+      it('includes the intended template',() => {
+        expect(component.template).to.equal(WeddingDateTemplate);
+      });
+
+      it('invokes the right controller', () => {
+        expect(component.controller).to.equal(WeddingDateController);
+      });
+  });
+});

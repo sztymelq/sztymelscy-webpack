@@ -2,12 +2,11 @@ import angular from 'angular';
 import Home from './home/home';
 import About from './about/about';
 import Hero from './hero/hero';
+import WeddingDate from './weddingDate/weddingDate';
 
-let componentModule = angular.module('app.components', [
-    Home,
-    About,
-    Hero
-])
-    .name;
-
-export default componentModule;
+export default angular.module('app.components', [
+  Home,
+  About,
+  Hero,
+  WeddingDate
+]).name;
