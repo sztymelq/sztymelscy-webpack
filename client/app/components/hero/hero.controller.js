@@ -1,10 +1,11 @@
 class HeroController {
-  constructor($interval) {
+  constructor($interval, $timeout) {
     let number = 0;
-    const SLIDES_INTERVAL = 4000;
+    const SLIDES_INTERVAL = 6000;
     this.maxImages = 5;
     this.currentImage = this.computeImageBackground(number);
     this.images = [...Array(this.maxImages).keys()];
+    this.$timeout = $timeout;
 
     $interval(() => {
       number = (number + 1) % this.maxImages;
@@ -13,7 +14,14 @@ class HeroController {
   }
 
   $onInit() {
-    this.currentImage = this.computeImageBackground(0);
+    this.$timeout(() => {
+      this.logoNamesVisible = true;
+    }, 1000);
+
+    this.$timeout(() => {
+      this.logoWelcomeVisible = true;
+    }, 2500);
+
     // const weddingDate = new Date(2017, 7, 5, 16, 0, 0, 0);
     // const MS_PER_DAY = 1000;
     // new FlipClock($('.countdown-clock'), (weddingDate - new Date()) / MS_PER_DAY, {
@@ -41,5 +49,5 @@ class HeroController {
   }
 }
 
-HeroController.$inject = ['$interval'];
+HeroController.$inject = ['$interval', '$timeout'];
 export default HeroController;

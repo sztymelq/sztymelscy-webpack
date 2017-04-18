@@ -45,3 +45,33 @@
   -ms-filter: blur(20px);
   filter: blur(20px);
 }
+
+.logo-names {
+  transition: all 1s linear;
+  position: absolute;
+  top: 60vh;
+  width: 50vw;
+  left: 10vw;
+}
+
+.logo-names.ng-enter {
+  opacity: 0;
+}
+.logo-names.ng-enter-active {
+  opacity: 1;
+}
+
+.logo-welcome {
+  transition: all 1s linear;
+  position: absolute;
+  top: 72vh;
+  width: 20vw;
+  left: 60vw;
+}
+
+.logo-welcome.ng-enter {
+  opacity: 0;
+}
+.logo-welcome.ng-enter-active {
+  opacity: 1;
+}
