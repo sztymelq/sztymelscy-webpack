@@ -1,7 +1,8 @@
 import constants from '../../common/constants';
 
 class HomeController {
-  constructor() {
+  constructor($timeout) {
+    this.$timeout = $timeout;
     this.items = constants.items;
     this.scrollMagicController = new ScrollMagic.Controller();
   }
@@ -21,11 +22,13 @@ class HomeController {
 
   registerVelocity(elementId) {
     const selector = `#${elementId} > .jumbotron`;
-    new ScrollMagic.Scene({ triggerElement: `#${elementId}-trigger`, offset: 175 })
-      .setVelocity(selector, { width: '100%', opacity: 1 }, { duration: 500 })
+    return new ScrollMagic.Scene({ triggerElement: `#${elementId}-trigger` }) //offset: 175
+      .setVelocity(selector, { opacity: 1 }, { duration: 600 }) //width: '100%',
       // .setClassToggle(selector, 'visible')
       .addTo(this.scrollMagicController);
   }
 }
+
+HomeController.$inject = ['$timeout'];
 
 export default HomeController;

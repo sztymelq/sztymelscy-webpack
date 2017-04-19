@@ -5,6 +5,7 @@ import './jumbotron.scss';
 export default {
   restrict: 'E',
   bindings: {
+    isActive: '<',
     jumboTitle: '@',
     contentPath: '@',
     color: '@',

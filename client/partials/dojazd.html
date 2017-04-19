@@ -1,3 +1,19 @@
 <div>
-    Dojedziecie kierując się na Kalisz. Wesele odbędzie się w Kraszewicach.
+    <div style="margin-bottom: 1em;">
+      Dojedziecie kierując się na Kalisz.
+    </div>
+
+  <ui-gmap-google-map
+          center='$ctrl.map.center'
+          zoom='$ctrl.map.zoom'
+          draggable="true">
+
+    <ui-gmap-marker
+            coords="$ctrl.marker.coords"
+            options="$ctrl.marker.options"
+            events="$ctrl.marker.events"
+            idkey="$ctrl.marker.id">
+
+  </ui-gmap-google-map>
+
 </div>
