@@ -21,9 +21,14 @@ class HomeController {
   }
 
   registerVelocity(elementId) {
-    const selector = `#${elementId} > .jumbotron`;
-    return new ScrollMagic.Scene({ triggerElement: `#${elementId}-trigger` }) //offset: 175
-      .setVelocity(selector, { opacity: 1 }, { duration: 600 }) //width: '100%',
+    // const selector = `#${elementId} > .jumbotron`;
+    // console.log('$(selector)', $(selector));
+    const selector = `#${elementId} .boxx`;
+    return new ScrollMagic.Scene({
+      triggerElement: `#${elementId}-trigger`,
+      offset: 50
+    })//offset: 175
+      .setVelocity(selector, { width: '100%', opacity: 1 }, { duration: 600 })
       // .setClassToggle(selector, 'visible')
       .addTo(this.scrollMagicController);
   }
