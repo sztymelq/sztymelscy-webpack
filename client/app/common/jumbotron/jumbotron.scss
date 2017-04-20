@@ -41,6 +41,8 @@
       width: 40%;
     }
 
+
+
     .container {
       width: 100%;
 
@@ -49,7 +51,12 @@
         justify-content: center;
         border-bottom-style: solid;
         border-bottom-width: 1px;
-        
+        padding-bottom: 1em;
+
+        //.jumbo-title-separator {
+        //  width: 40vw;
+        //  height: 1px;
+        //}
       }
     }
   }
