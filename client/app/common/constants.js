@@ -3,6 +3,6 @@ export default {
     { name: 'Ślub', href: '#slub', icon: 'fa fa-heart' },
     { name: 'Wesele', href: '#wesele', icon: 'fa fa-glass' },
     { name: 'Dojazd', href: '#dojazd', icon: 'fa fa-car' },
-    { name: 'Zakwaterowanie', href: '#zakwaterowanie', icon: 'fa fa-hotel' }
+    { name: 'Nocleg', href: '#zakwaterowanie', icon: 'fa fa-hotel' }
   ]
 };

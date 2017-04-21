@@ -6,7 +6,7 @@
 
 .jumbotron {
   background: $primaryColor;
-  //opacity: 0.1;
+  opacity: 0.1;
   //filter: blur(5px);
   text-align: center;
   width: 100%;
@@ -39,11 +39,10 @@
 
     .boxx {
       background: $primaryColor;
-      opacity: 0.1;
-      width: 40%;
+      //opacity: 0.1;
+      width: 100%;
+      font-size: 5vh;
     }
-
-
 
     .container {
       width: 100%;
@@ -51,15 +50,17 @@
       .tile-content {
         display: flex;
         justify-content: center;
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-        padding-bottom: 1em;
-        border-bottom-color: lightgray;
+        align-items: center;
+        //border-bottom-style: solid;
+        //border-bottom-width: 1px;
+        //padding-bottom: 1em;
+        //border-bottom-color: lightgray;
 
-        //.jumbo-title-separator {
-        //  width: 40vw;
-        //  height: 1px;
-        //}
+        .jumbo-title-separator {
+          width: 45vw;
+          background: lightgrey;
+          height: 1px;
+        }
       }
     }
   }

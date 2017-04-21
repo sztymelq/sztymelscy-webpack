@@ -15,8 +15,12 @@
       border-style: solid;
       border-radius: 0.5em;
 
+      .digit-description {
+        font-size: 2vh;
+      }
+
       .digit {
-        font-size: 48px;
+        font-size: 5vh;
       }
     }
   }
