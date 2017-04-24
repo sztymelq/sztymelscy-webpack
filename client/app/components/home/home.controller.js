@@ -5,6 +5,17 @@ class HomeController {
     this.$timeout = $timeout;
     this.items = constants.items;
     this.scrollMagicController = new ScrollMagic.Controller();
+
+    this.map = { center: { latitude: 51.5145388, longitude: 18.2100481 }, zoom: 8 };
+    this.marker = {
+      id: 0,
+      coords: {
+        latitude: 51.5145388,
+        longitude: 18.2100481
+      },
+      options: { draggable: false },
+      events: {}
+    };
   }
 
   $onInit() {
@@ -12,12 +23,6 @@ class HomeController {
     this.registerVelocity('wesele');
     this.registerVelocity('dojazd');
     this.registerVelocity('zakwaterowanie');
-
-    // new ScrollMagic.Scene({
-    //     triggerElement: "#trigger"
-    // }).setTween("#onas", 0.5, {backgroundColor: "green", scale: 2.5})
-    //     .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-    //     .addTo(smCtrl);
   }
 
   registerVelocity(elementId) {

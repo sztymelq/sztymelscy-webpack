@@ -51,6 +51,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        .title {
+          font-size: 5vh;
+        }
         //border-bottom-style: solid;
         //border-bottom-width: 1px;
         //padding-bottom: 1em;

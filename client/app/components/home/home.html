@@ -4,19 +4,65 @@
 </header>
 <main>
   <div id="slub-trigger" class="trigger"></div>
-  <jumbotron name="test" id="slub" name="slub" color="aliceblue" icon="fa fa-heart fa-2x" jumbo-title="Ślub"
-             content-path="partials/slub.html"></jumbotron>
+  <jumbotron id="slub" name="slub" icon="fa fa-heart" jumbo-title="Ślub">
+
+    <div class="content-info">
+      Ślub odbędzie się w
+      <a href="https://goo.gl/maps/xLgRdMMoLqC2">
+        Rzymskokatolickiej Parafii pw. Św. Apostołów Piotra i Pawła
+        ul. Szkolna 2
+        63-522 Kraszewice
+      </a>
+      <wedding-date></wedding-date>
+    </div>
+
+  </jumbotron>
 
   <div id="wesele-trigger" class="trigger"></div>
-  <jumbotron id="wesele" name="wesele" color="aliceblue" icon="fa fa-glass fa-2x" jumbo-title="Wesele"
-             content-path="partials/wesele.html"></jumbotron>
+  <jumbotron id="wesele" name="wesele" icon="fa fa-glass" jumbo-title="Wesele">
+
+    <div class="content-info">
+      Wesele odbędzie się nieopodal kościoła w
+      <a href="http://www.lesnydworbrzeziny.pl/%C5%82uzyczanka.html">
+        restauracji Łużyczanka</a>
+    </div>
+
+  </jumbotron>
 
   <div id="dojazd-trigger" class="trigger"></div>
-  <jumbotron id="dojazd" name="dojazd" color="aliceblue" icon="fa fa-car fa-2x" jumbo-title="Dojazd"
-             content-path="partials/dojazd.html"></jumbotron>
+  <jumbotron id="dojazd" name="dojazd" icon="fa fa-car" jumbo-title="Dojazd">
+
+    <div class="content-info">
+      <div style="margin-bottom: 1em;">
+        Dojedziecie kierując się na Kalisz.
+      </div>
+
+      <ui-gmap-google-map
+              center='$ctrl.map.center'
+              zoom='$ctrl.map.zoom'
+              draggable="true">
+
+        <ui-gmap-marker
+                coords="$ctrl.marker.coords"
+                options="$ctrl.marker.options"
+                events="$ctrl.marker.events"
+                idkey="$ctrl.marker.id">
+
+      </ui-gmap-google-map>
+
+    </div>
+
+
+  </jumbotron>
 
   <div id="zakwaterowanie-trigger" class="trigger"></div>
-  <jumbotron id="zakwaterowanie" name="zakwaterowanie" color="aliceblue" icon="fa fa-hotel fa-2x"
-             jumbo-title="Nocleg" content-path="partials/zakwaterowanie.html"></jumbotron>
+  <jumbotron id="zakwaterowanie" name="zakwaterowanie" icon="fa fa-hotel"
+             jumbo-title="Nocleg">
+
+    <div class="content-info">
+      Nie martwcie się o noclegi. Zapewnimy nocleg każdemu przyjezdnemu uczestnikowi zabawy.
+    </div>
+
+  </jumbotron>
 
 </main>
