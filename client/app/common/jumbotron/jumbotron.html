@@ -1,5 +1,5 @@
 <div ng-style="$ctrl.customStyle" class="jumbotron">
-  <div class="hero-title">
+  <div data-aos="zoom-in" class="hero-title">
     <div class="container">
       <div class="boxx">
         <div class="tile is-ancestor">
@@ -7,6 +7,7 @@
             <i class="{{$ctrl.icon}}"></i>
           </div>
           <div class="tile is-vertical is-8 tile-content">
+            <!--<div class="jumbo-title-separator"></div>-->
             <h1 class="title">{{$ctrl.jumboTitle}}</h1>
             <div class="jumbo-title-separator"></div>
           </div>
@@ -15,5 +16,4 @@
     </div>
   </div>
   <div class="jumbo-content" ng-transclude></div>
-  <!--<div class="jumbo-content" ng-include="$ctrl.contentPath"></div>-->
 </div>

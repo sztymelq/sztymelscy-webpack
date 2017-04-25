@@ -1,3 +1,4 @@
+import angular from 'angular';
 import constants from '../constants.js';
 
 class NavbarController {
@@ -5,7 +6,7 @@ class NavbarController {
     this.name = 'navbar';
     this.items = constants.items;
 
-    $($window).bind('scroll', () => {
+    angular.element($window).bind('scroll', () => {
       $interval(() => {
         this.isFixedTop = $element[0].offsetTop <= $window.pageYOffset;
       });

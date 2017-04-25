@@ -3,66 +3,74 @@
   <navbar></navbar>
 </header>
 <main>
-  <div id="slub-trigger" class="trigger"></div>
   <jumbotron id="slub" name="slub" icon="fa fa-heart" jumbo-title="Ślub">
+    <div class="nocleg-content">
+      <img class="content-image" src="/images/slub.JPG">
 
-    <div class="content-info">
-      Ślub odbędzie się w
-      <a href="https://goo.gl/maps/xLgRdMMoLqC2">
-        Rzymskokatolickiej Parafii pw. Św. Apostołów Piotra i Pawła
-        ul. Szkolna 2
-        63-522 Kraszewice
-      </a>
-      <wedding-date></wedding-date>
+      <div class="content-info">
+        Ślub odbędzie się w
+        <a href="https://goo.gl/maps/xLgRdMMoLqC2">
+          Rzymskokatolickiej Parafii pw. Św. Apostołów Piotra i Pawła
+          ul. Szkolna 2
+          63-522 Kraszewice
+        </a>
+      </div>
     </div>
+
+    <wedding-date></wedding-date>
 
   </jumbotron>
 
-  <div id="wesele-trigger" class="trigger"></div>
   <jumbotron id="wesele" name="wesele" icon="fa fa-glass" jumbo-title="Wesele">
 
-    <div class="content-info">
-      Wesele odbędzie się nieopodal kościoła w
-      <a href="http://www.lesnydworbrzeziny.pl/%C5%82uzyczanka.html">
-        restauracji Łużyczanka</a>
-    </div>
+    <div class="nocleg-content">
+      <img class="content-image" src="/images/wesele2.JPG">
 
+      <div class="content-info">
+        Wesele odbędzie się nieopodal kościoła w
+        <a href="http://www.lesnydworbrzeziny.pl/%C5%82uzyczanka.html">
+          restauracji Łużyczanka</a>
+      </div>
+    </div>
   </jumbotron>
 
-  <div id="dojazd-trigger" class="trigger"></div>
   <jumbotron id="dojazd" name="dojazd" icon="fa fa-car" jumbo-title="Dojazd">
+    <div class="nocleg-content">
+      <img class="content-image" src="/images/dojazd.JPG">
 
-    <div class="content-info">
-      <div style="margin-bottom: 1em;">
-        Dojedziecie kierując się na Kalisz.
+      <div class="content-info">
+        <div style="margin-bottom: 1em;">
+          Dojedziecie kierując się na Kalisz.
+        </div>
+
+        <ui-gmap-google-map
+                center='$ctrl.map.center'
+                zoom='$ctrl.map.zoom'
+                draggable="true">
+
+          <ui-gmap-marker
+                  coords="$ctrl.marker.coords"
+                  options="$ctrl.marker.options"
+                  events="$ctrl.marker.events"
+                  idkey="$ctrl.marker.id">
+
+        </ui-gmap-google-map>
       </div>
 
-      <ui-gmap-google-map
-              center='$ctrl.map.center'
-              zoom='$ctrl.map.zoom'
-              draggable="true">
-
-        <ui-gmap-marker
-                coords="$ctrl.marker.coords"
-                options="$ctrl.marker.options"
-                events="$ctrl.marker.events"
-                idkey="$ctrl.marker.id">
-
-      </ui-gmap-google-map>
-
     </div>
-
 
   </jumbotron>
 
-  <div id="zakwaterowanie-trigger" class="trigger"></div>
-  <jumbotron id="zakwaterowanie" name="zakwaterowanie" icon="fa fa-hotel"
+  <jumbotron id="nocleg" name="nocleg" icon="fa fa-hotel"
              jumbo-title="Nocleg">
 
-    <div class="content-info">
-      Nie martwcie się o noclegi. Zapewnimy nocleg każdemu przyjezdnemu uczestnikowi zabawy.
-    </div>
+    <div class="nocleg-content">
+      <img class="content-image" src="/images/slub2.JPG">
 
+      <div class="content-info">
+        Nie martwcie się o noclegi. Zapewnimy nocleg każdemu przyjezdnemu uczestnikowi zabawy.
+      </div>
+    </div>
   </jumbotron>
 
 </main>

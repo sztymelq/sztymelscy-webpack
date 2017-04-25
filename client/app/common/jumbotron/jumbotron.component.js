@@ -6,7 +6,6 @@ export default {
   restrict: 'E',
   bindings: {
     jumboTitle: '@',
-    contentPath: '@',
     icon: '@',
     name: '@'
   },

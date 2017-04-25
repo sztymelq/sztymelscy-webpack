@@ -1,7 +1,42 @@
+@import '../../app';
+
 .visible {
   width: 100%;
   opacity: 1;
   filter: blur(0px);
 }
 
-.angular-google-map-container { height: 40vh; }
+.angular-google-map-container { height: 30vh; }
+
+.nocleg-content {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 480px) {
+    flex-direction: row;
+  }
+}
+
+.content-image {
+  display: block;
+  background-position: center;
+  max-height: 30vh;
+  border-radius: 0.3em;
+  //box-shadow: $primaryColor 0px 0px 10px 1px inset;
+  box-shadow: 0px 0px 8px 3px;
+
+  @media (min-width: 480px) {
+    margin-top: 1em;
+  }
+}
+
+.content-info {
+  margin-left: 1em;
+  margin-top: 1em;
+
+  @media (min-width: 480px) {
+    margin-top: 0;
+  }
+}

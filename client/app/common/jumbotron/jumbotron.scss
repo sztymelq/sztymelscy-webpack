@@ -1,13 +1,7 @@
 @import '../common';
 
-.content-info {
-  //font-size: 5vh;
-}
-
 .jumbotron {
   background: $primaryColor;
-  opacity: 0.1;
-  //filter: blur(5px);
   text-align: center;
   width: 100%;
   height: 100vh;
@@ -18,15 +12,14 @@
 
   border-style: none solid none solid;
   border-color: white;
-  //margin-top: 10vh;
+  //margin-top: 15vh;
 
   .jumbo-content {
-    height: 95%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 2em;
-    width: 80vw;
+    width: 90vw;
   }
 
   .hero-title {
@@ -39,7 +32,6 @@
 
     .boxx {
       background: $primaryColor;
-      //opacity: 0.1;
       width: 100%;
       font-size: 5vh;
     }
@@ -55,15 +47,12 @@
         .title {
           font-size: 5vh;
         }
-        //border-bottom-style: solid;
-        //border-bottom-width: 1px;
-        //padding-bottom: 1em;
-        //border-bottom-color: lightgray;
 
         .jumbo-title-separator {
           width: 45vw;
           background: lightgrey;
-          height: 1px;
+          height: 2px;
+          //box-shadow: white 0px 0px 16px 3px;
         }
       }
     }

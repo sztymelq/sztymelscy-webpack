@@ -5,17 +5,18 @@ import ngAnimate from 'angular-animate';
 import 'lodash';
 import 'angular-simple-logger';
 import 'angular-google-maps';
-
+import aos from 'aos';
 import Common from './common/common';
 import Components from './components/components';
 import AppComponent from './app.component';
 
-require('script-loader!../../node_modules/jquery/dist/jquery.min.js');
-require('script-loader!../../node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js');
-require('script-loader!../../node_modules/scrollmagic/scrollmagic/minified/plugins/animation.velocity.min.js');
-require('script-loader!../../node_modules/flipclock/compiled/flipclock.js');
 require('script-loader!../../node_modules/countdown.js');
-// require('script-loader!../../node_modules/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js');
+
+aos.init({
+  duration: 500,
+  easing: 'ease-in-sine',
+  delay: 100,
+});
 
 angular.module('app', [
   ngAnimate,
