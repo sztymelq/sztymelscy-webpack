@@ -68,35 +68,58 @@
   }
 }
 
-
 .logo-names {
   z-index: 1;
-  transition: 1s linear;
+  transition: 0.5s ease-out;
   position: absolute;
-  top: 60vh;
-  width: 50vw;
-  left: 10vw;
+  top: 55vh;
+  width: 75vw;
+  left: 5vw;
+
+  @media (min-width: 768px) {
+    top: 60vh;
+    width: 50vw;
+    left: 10vw;
+  }
 }
 
 .logo-names.ng-enter {
   opacity: 0;
+  //left: 9.5vw;
+  //top: 59.5vh;
 }
 .logo-names.ng-enter-active {
   opacity: 1;
+  //left: 10vw;
+  //top: 60vh;
 }
 
 .logo-welcome {
   z-index: 1;
-  transition: 1s linear;
+  transition: 0.5s ease-out;
   position: absolute;
-  top: 72vh;
-  width: 20vw;
-  left: 60vw;
+  top: 66vh;
+  width: 45vw;
+  left: 50vw;
+
+  @media (min-width: 480px) {
+    top: 70vh;
+  }
+
+  @media (min-width: 768px) {
+    top: 72vh;
+    width: 30vw;
+    left: 60vw;
+  }
 }
 
 .logo-welcome.ng-enter {
   opacity: 0;
+  //top: 72.5vh;
+  //left: 60.5vw;
 }
 .logo-welcome.ng-enter-active {
   opacity: 1;
+  //top: 72vh;
+  //left: 60vw;
 }
