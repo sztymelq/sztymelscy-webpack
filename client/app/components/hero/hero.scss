@@ -1,31 +1,61 @@
 @import '../../app';
 
+@keyframes imageAnimation {
+  10% { opacity: 1 ;}
+  20% { opacity: 1 ; transition-timing-function: ease-in;}
+  30% { opacity: 0 ; transition-timing-function: ease-out;}
+  40% { opacity: 0 ;}
+  60% { opacity: 0 ;}
+}
+
 .hero {
   .hero-body {
     background: $primaryColor;
     padding: 0;
     position: relative;
 
-    .hero-image {
-      background-size: cover;
+    .container {
+      position: relative;
       height: 100vh;
-      background-position: center;
+      width: 100vw;
+    }
+
+    .hero-image {
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      background-position: center center;
       background-attachment: fixed;
       background-repeat: no-repeat;
-      //box-shadow: $primaryColor 0px 0px 8px 8px inset
+      animation: imageAnimation 25s linear infinite 0s;
     }
 
-    .hero-image.ng-hide-remove {
-      transition: all;
+    .hero-image0 {
+      background-image: url(/images/0.JPG);
+    }
+    .hero-image1 {
+      background-image: url(/images/1.JPG);
+      animation-delay: 5s;
+    }
+    .hero-image2 {
+      background-image: url(/images/2.JPG);
+      animation-delay: 10s;
+    }
+    .hero-image3 {
+      background-image: url(/images/3.JPG);
+      animation-delay: 15s;
+    }
+    .hero-image4 {
+      background-image: url(/images/4.JPG);
+      animation-delay: 20s;
     }
 
-    .hero-image.ng-hide-remove {
-      opacity: 0;
-    }
 
-    .hero-image.ng-hide-remove-active {
-      opacity: 1;
-    }
   }
 
   .countdown-clock {
@@ -40,6 +70,7 @@
 
 
 .logo-names {
+  z-index: 1;
   transition: 1s linear;
   position: absolute;
   top: 60vh;
@@ -55,6 +86,7 @@
 }
 
 .logo-welcome {
+  z-index: 1;
   transition: 1s linear;
   position: absolute;
   top: 72vh;
