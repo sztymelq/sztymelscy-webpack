@@ -54,8 +54,6 @@
       background-image: url(/images/4.JPG);
       animation-delay: 24s;
     }
-
-
   }
 
   .countdown-clock {
@@ -69,12 +67,14 @@
 }
 
 .logo-names {
+  opacity: 0;
   z-index: 1;
-  transition: 0.8s ease-out;
   position: absolute;
   top: 55vh;
   width: 75vw;
   left: 5vw;
+  animation: LogoAnimation 1s forwards;
+  animation-delay: 2s;
 
   @media (min-width: 768px) {
     top: 60vh;
@@ -83,20 +83,15 @@
   }
 }
 
-.logo-names.ng-enter {
-  opacity: 0;
-}
-.logo-names.ng-enter-active {
-  opacity: 1;
-}
-
 .logo-welcome {
+  opacity: 0;
   z-index: 1;
-  transition: 0.5s ease-in;
   position: absolute;
   top: 66vh;
   width: 45vw;
   left: 50vw;
+  animation: LogoAnimation 1s forwards;
+  animation-delay: 3s;
 
   @media (min-width: 480px) {
     top: 70vh;
@@ -109,9 +104,14 @@
   }
 }
 
-.logo-welcome.ng-enter {
-  opacity: 0;
-}
-.logo-welcome.ng-enter-active {
-  opacity: 1;
+@keyframes LogoAnimation {
+  0% {
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
 }
