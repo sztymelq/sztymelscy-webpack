@@ -35,18 +35,18 @@
   max-height: 40vh;
   border-radius: 0.2em;
   box-shadow: 0 0 8px 3px;
+  margin-bottom: 1em;
   //box-shadow: $primaryColor 0px 0px 10px 1px inset;
   //box-shadow: 16px 16px 10px -8px;
 
   @media (min-width: 768px) {
     margin-right: 1.5em;
+    margin-bottom: 0;
     float: left;
   }
 }
 
 .content-info {
-  margin-left: 1em;
-  margin-top: 1em;
   text-align: justify;
 
   @media (min-width: 768px) {
