@@ -1,7 +1,6 @@
 import 'normalize.css';
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
-import ngAnimate from 'angular-animate';
 import 'lodash';
 import 'angular-simple-logger';
 import 'angular-google-maps';
@@ -12,7 +11,6 @@ import AppComponent from './app.component';
 require('script-loader!../../node_modules/countdown.js');
 
 angular.module('app', [
-  ngAnimate,
   uiRouter,
   Common,
   Components,
