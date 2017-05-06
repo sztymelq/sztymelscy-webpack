@@ -1,7 +1,7 @@
 {
-  "name": "ng6-starter",
+  "name": "sztymelscy",
   "version": "0.0.1",
-  "description": "Starter for Angular + ES6 + (Webpack or JSPM)",
+  "description": "Wirginia i Piotr",
   "main": "index.js",
   "dependencies": {
     "angular": "1.5.1",
@@ -73,7 +73,7 @@
     "type": "git",
     "url": "https://github.com/angularclass/NG6-starter.git"
   },
-  "author": "AngularClass",
+  "author": "Sztymel",
   "license": "Apache-2.0",
   "babel": {
     "plugins": [

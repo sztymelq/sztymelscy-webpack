@@ -1,11 +1,4 @@
-//$primaryColor:   #0277bd;
 $primaryColor:   #eceeef;
-$accentColor:    #1de9b6;
-$bgColor:        #efefef;
-$darkBgColor:    #263238;
-$lightBgColor:   #37474f;
-$lightTextColor: #f5f5f5;
-$darkTextColor:  #212121;
 
 body {
    height: 100%;
@@ -13,4 +6,4 @@ body {
 
 @import url(https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.3/css/bulma.min.css);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
-
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');

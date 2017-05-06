@@ -1,77 +1,117 @@
 <header>
-  <hero></hero>
-  <navbar></navbar>
+    <hero></hero>
+    <navbar></navbar>
 </header>
 <main>
-  <jumbotron id="slub" name="slub" icon="fa fa-heart" jumbo-title="Ślub">
-    <div class="transcluded-content">
-      <img class="content-image" src="/images/slub.JPG">
+    <jumbotron id="slub" name="slub" icon="fa fa-heart" jumbo-title="Ślub">
+        <div class="transcluded-content">
+            <img class="content-image" src="/images/slub.JPG">
 
-      <p class="content-info">
-        Wirginia i Piotr mają wielką radość i ogromny zaszczyt zaprosić szanownych gości, a więc Was nasi najbliżsi na ślub,
-        który odbędzie się 5.08.2017 r. w <a href="https://goo.gl/maps/xLgRdMMoLqC2">Rzymskokatolickiej Parafii pw. Św. Apostołów Piotra i Pawła</a>
-        przy ul. Szkolnej 2 w Kraszewicach, o godz. 16:00.
-      </p>
+            <p class="content-info">
+                Wirginia i Piotr mają wielką radość i ogromny zaszczyt zaprosić szanownych gości, a więc Was nasi
+                najbliżsi na ślub, który odbędzie się <strong>5.08.2017r.</strong> w <a
+                    href="https://goo.gl/maps/xLgRdMMoLqC2">Kościele św. Apostołów Piotra i Pawła przy ul. Szkolnej 2 w
+                Kraszewicach</a> <strong>o godz. 16:00</strong>. Ponieważ zdajemy sobie sprawę z tego, że dojazd do
+                mniejszej miejscowości może być kłopotliwy poniżej zamieszczamy mapkę z oznaczonym miejscem ślubu i
+                przyjęcia weselnego.
+            </p>
+            Gdy już będziecie wjeżdżać do Kraszewic, aby dojechać do kościoła należy kierować się:
+            <ol>
+                <li>
+                    jadąc od strony Wrocławia przy wjeździe do miejscowości Kraszewice - cały czas prosto ulicą
+                    początkowo grabowską, nastąnie wieluńską, a po minięciu przystanku autobusowego po prawej stronie
+                    należy skręcić w prawo. Kościół powinien być widoczny już na wysokości przystanku autobusowego po
+                    prawej stronie,
+                </li>
+                <li>
+                    nadjeżdżając do miejscowości Kraszewice od strony przeciwnej, a więc od Wielunia należy, podobnie
+                    jak w przypadku opisywanym powyżej jechać prosto ulicą wieluńską oraz po minięciu sklepu Polo Market
+                    po lewej stronie przejechać jedno skrzyżowanie prosto oraz na kolejnym skrzyżowaniu skręcić w lewo w
+                    ul. Szkolną. Na wysokości skrętu w lewo kościół winien już byc widoczny.
+                </li>
+            </ol>
+        </div>
+
+        <wedding-date></wedding-date>
+    </jumbotron>
+
+    <jumbotron id="wesele" name="wesele" icon="fa fa-glass" jumbo-title="Wesele">
+        <div class="transcluded-content">
+            <img class="content-image" src="/images/wesele2.JPG">
+
+            <p class="content-info">
+                Po uroczystości ślubnej wszystkich gości serdecznie zapraszamy na przyjęcie weselne do <a
+                    href="http://www.lesnydworbrzeziny.pl/%C5%82uzyczanka.html">Restauracji Łużyczanka</a> przy ul.
+                Wieluskiej 41 w Kraszewicach. W miejscu tym czeka na Was wyśmienita zabawa, dlatego polecamy zabrać ze
+                sobą dobry nastrój, wygodne buty i odpowiednie imprezowe nastawienie:)
+
+            <p>Dnia następnego tj. 6.08.2017 r. wszystkich gości zapraszamy na poprawiny.</p>
+        </div>
+    </jumbotron>
+
+    <jumbotron id="dojazd" name="dojazd" icon="fa fa-car" jumbo-title="Dojazd">
+        <div class="transcluded-content">
+            <img class="content-image" src="/images/dojazd.JPG">
+
+            <p class="content-info">
+                Kierując się z <strong>Wrocławia lub ze Świdnicy</strong> do miejscowości Kraszewice dojedziecie drogą
+                krajową S8 w kierunku Sycowa, z której należy zjechać przy zjeździe „Syców Zachód”. Z miejscowości Syców
+                kolejno należy kierować się drogą nr 449 w kierunku Kobylej Góry, następnie w kierunku Ostrzeszowa,
+                Grabowa nad Prosną i ostatecznie do Kraszewic.
+
+                Kierując się z <strong>Warszawy</strong> do miejsca uroczystości dojedziecie jadąc w kierunku Łodzi
+                autostradą A2 (drogą nr E30), kolejno na wysokości miejscowości Stryków wjeżdżając na autostradę A1
+                (droga nr E75), a następnie zjeżdżając na drogę ekspresową S8. Z drogi tej należy zjechać na wysokości
+                miejscowości Jeziory oraz kierować się początkowo na Tumidaj, Bronisławów, Wiry, Ciołki, Brąszewice,
+                Czajków oraz docelowo do Kraszewic.
+                Dojeżdżając z <strong>Zamościa</strong> należy kierować się początkowo na miejscowość Krasnystaw,
+                kolejno na Świdnik, Lublin, Puławy, Radom, Tomaszów Mazowiecki, Piotrków Trybunalski. Następnie należy
+                wjechać na autostradę A1, zjechać na drogę ekspresową S8. Z drogi tej należy zjechać na wysokości
+                miejscowości Jeziory oraz kierować się kolejno na miejscowości Tumidaj, Bronisławów, Wiry, Ciołki,
+                Brąszewice, Czajków oraz docelowo do Kraszewice.
+            </p>
+
+            <div style="margin-bottom: 1em;">Przewidywany czas przejazdu to:
+                <ul>
+                    <li>z Wrocławia : 1 godz. 37 minut</li>
+                    <li>ze Świdnicy: 2 godz. 9 minut</li>
+                </ul>
+            </div>
+
+
+            <ui-gmap-google-map
+                    center='$ctrl.map.center'
+                    zoom='$ctrl.map.zoom'
+                    draggable="true">
+
+                <ui-gmap-marker
+                        coords="$ctrl.marker.coords"
+                        options="$ctrl.marker.options"
+                        events="$ctrl.marker.events"
+                        idkey="$ctrl.marker.id">
+                </ui-gmap-marker>
+            </ui-gmap-google-map>
+        </div>
+    </jumbotron>
+
+    <jumbotron id="nocleg" name="nocleg" icon="fa fa-hotel"
+               jumbo-title="Nocleg">
+
+        <div class="transcluded-content">
+            <img class="content-image" src="/images/slub2.JPG">
+
+            <p class="content-info">
+                Każdy uczestnik zabawy spoza województwa wielkopolskiego może liczyć na nocleg oferowany przez Nas.
+                Dlatego też osoby przyjezdne prosimy o indywidualny kontakt z nami pod numerami telefonów podanymi w
+                zaproszeniach. Każdemu udzielimy dokładnych informacji dotyczących dojazdu do miejsca noclegu. Miejsca
+                zakwaterowania będą dostępne w dniu 5.08.2017 r. co najmniej od godziny 14:00.
+            </p>
+        </div>
+    </jumbotron>
+
+
+    <div class="closing">Mamy nadzieję, że zaszczycicie nas swoją obecnością i będziecie chcieli razem z nami dzielić
+        ważne dla nas w życiu chwile.
     </div>
-
-    <wedding-date></wedding-date>
-
-  </jumbotron>
-
-  <jumbotron id="wesele" name="wesele" icon="fa fa-glass" jumbo-title="Wesele">
-
-    <div class="transcluded-content">
-      <img class="content-image" src="/images/wesele2.JPG">
-
-      <p class="content-info">
-
-        Po uroczystości ślubnej wszystkich gości serdecznie zapraszamy na przyjęcie weselne, które odbędzie się w
-        <a href="http://www.lesnydworbrzeziny.pl/%C5%82uzyczanka.html">Restauracji Łużyczanka</a> w miejscowości Kraszewice przy ul. Wieluńskiej.
-        Tam na wszystkich czeka wyśmienita zabawa, dlatego polecamy zabrać ze sobą dobry nastrój i odpowiednie imprezowe nastawienie.
-        Dnia następnego tj. 6.08.2017 r. wszystkich gości zapraszamy na poprawiny.
-
-      </p>
-    </div>
-  </jumbotron>
-
-  <jumbotron id="dojazd" name="dojazd" icon="fa fa-car" jumbo-title="Dojazd">
-    <div class="transcluded-content">
-      <img class="content-image" src="/images/dojazd.JPG">
-
-      <p class="content-info" style="margin-bottom: 1em;">
-          Zdajemy sobie sprawę, że dojazd do mniejszej miejscowości może być kłopotliwy poniżej zamieszczamy mapkę dojazdu do miejsca uroczystości. Aby dojechać na Kościoła należy
-          1. jadąc od strony Wrocławia przy wjeździe do miejscowości Kraszewice kierować się cały czas prosto ulicą wieluńską, a po minięciu przystanku autobusowego po prawej stronie skręcić w prawo. Kościół powinien być widoczny już na wysokości przystanku autobusowego po prawej stronie.
-          2. nadjeżdżając do miejscowości Kraszewice od strony przeciwnej, a więc od Wielunia należy podobnie jak w przypadku opisywanym powyżej kierować się prosto ul. Wieluńska oraz po minięciu sklepu spożywczego Polo Market po lewej stronie przejechać jedno skrzyżowanie prosto oraz na kolejnym skrzyżowaniu skręcić w lewo w ul. Szkolną. Na wysokości skrętu w lewo kościół winien być widoczny po lewej stronie.
-      </p>
-
-      <ui-gmap-google-map
-              center='$ctrl.map.center'
-              zoom='$ctrl.map.zoom'
-              draggable="true">
-
-        <ui-gmap-marker
-                coords="$ctrl.marker.coords"
-                options="$ctrl.marker.options"
-                events="$ctrl.marker.events"
-                idkey="$ctrl.marker.id">
-
-      </ui-gmap-google-map>
-
-    </div>
-
-  </jumbotron>
-
-  <jumbotron id="nocleg" name="nocleg" icon="fa fa-hotel"
-             jumbo-title="Nocleg">
-
-    <div class="transcluded-content">
-      <img class="content-image" src="/images/slub2.JPG">
-
-      <p class="content-info">
-        Każdy uczestnik zabawy spoza województwa wielkopolskiego może liczyć na nocleg oferowany z naszej strony. Osoby te prosimy o indywidualny kontakt z nami pod numerami telefonów podanymi w zaproszeniach. Każdego udzielimy dokładnych informacji dotyczących dojazdu do miejsca noclegu. Miejsca zakwaterowania będą dostępne w dniu 5.08.2017 r. co najmniej od godziny 14:00.
-        Mamy nadzieje, że zaszczycicie nas swoją obecnością i będziecie chcieli razem z nami dzielić ważne dla nas w życiu chwile.
-      </p>
-    </div>
-  </jumbotron>
 
 </main>
