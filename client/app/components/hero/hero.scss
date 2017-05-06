@@ -67,40 +67,44 @@
 }
 
 .logo-names {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3em;
+  color: white;
   opacity: 0;
   z-index: 1;
   position: absolute;
   top: 55vh;
-  width: 75vw;
   left: 5vw;
   animation: LogoAnimation 1s forwards;
   animation-delay: 2s;
 
-  @media (min-width: 768px) {
-    top: 60vh;
-    width: 50vw;
-    left: 10vw;
+  @media (min-width: 1024px) {
+    font-size: 5em;
+  }
+
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    font-size: 3em;
   }
 }
 
 .logo-welcome {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2em;
+  color: white;
   opacity: 0;
   z-index: 1;
   position: absolute;
   top: 66vh;
-  width: 45vw;
   left: 50vw;
   animation: LogoAnimation 1s forwards;
   animation-delay: 3s;
 
-  @media (min-width: 480px) {
-    top: 70vh;
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    font-size: 2em;
   }
 
-  @media (min-width: 768px) {
-    top: 72vh;
-    width: 30vw;
-    left: 60vw;
+  @media (min-width: 1024px) {
+    font-size: 4em;
   }
 }
 

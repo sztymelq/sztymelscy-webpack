@@ -23,6 +23,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 2em;
+  min-height: 40vh;
 
   @media (min-width: 768px) {
     display: block;
