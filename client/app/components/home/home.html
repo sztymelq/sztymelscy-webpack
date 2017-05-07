@@ -56,9 +56,9 @@
     </jumbotron>
 
     <jumbotron id="dojazd" name="dojazd" icon="fa fa-car" jumbo-title="Dojazd">
-        <div class="transcluded-content">
-            <img class="content-image" src="/images/dojazd.JPG">
-            <div class="content-info">
+        <div >
+            <img class="content-image arrival-image" src="/images/dojazd.JPG">
+            <p style="text-align: justify">
                 Kierując się z <strong>Wrocławia lub ze Świdnicy</strong> do miejscowości Kraszewice dojedziecie drogą
                 krajową S8 w kierunku Sycowa, z której należy zjechać przy zjeździe „Syców Zachód”. Z miejscowości Syców
                 kolejno należy kierować się drogą nr 449 w kierunku Kobylej Góry, następnie w kierunku Ostrzeszowa,
@@ -74,14 +74,15 @@
                 wjechać na autostradę A1, zjechać na drogę ekspresową S8. Z drogi tej należy zjechać na wysokości
                 miejscowości Jeziory oraz kierować się kolejno na miejscowości Tumidaj, Bronisławów, Wiry, Ciołki,
                 Brąszewice, Czajków oraz docelowo do Kraszewice.
-                <div class="arrival-time">
-                    Przewidywany czas przejazdu to:
-                    <ul>
-                        <li>z Wrocławia: 1 godz. 37 minut</li>
-                        <li>ze Świdnicy: 2 godz. 9 minut</li>
-                    </ul>
-                </div>
-            </div>
+
+            </p>
+        </div>
+        <div class="arrival-time">
+            Przewidywany czas przejazdu to:
+            <ul>
+                <li>z Wrocławia: 1 godz. 37 minut</li>
+                <li>ze Świdnicy: 2 godz. 9 minut</li>
+            </ul>
         </div>
         <ui-gmap-google-map
                 center='$ctrl.map.center'

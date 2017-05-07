@@ -22,10 +22,30 @@
   align-items: center;
 }
 
+.arrival-image {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 1000px) {
+    float: left;
+    margin-right: 1.5em;
+  }
+}
+
 .arrival-time {
   text-align: center;
   margin-top: 1em;
-  font-size: 0.7em;
+  margin-bottom: 1em;
+  font-size: 0.8em;
+
+  //width: 25%;
+  //border-style: solid;
+  //border-radius: 0.5em;
+  //border-width: 1px;
+  //border-color: white;
+  //margin: auto;
+  //margin-bottom: 1em;
 }
 
 .transcluded-content {
