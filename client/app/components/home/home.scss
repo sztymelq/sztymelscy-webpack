@@ -37,7 +37,7 @@
   margin-bottom: 1em;
   min-height: 40vh;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1000px) {
     display: flex;
     flex-direction: row;
   }
@@ -59,7 +59,7 @@
   box-shadow: 0 0 8px 0;
   margin-bottom: 1em;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1000px) {
     margin-right: 1.5em;
     margin-bottom: 0;
   }
@@ -69,7 +69,7 @@
   text-align: justify;
   margin-bottom: 1em;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1000px) {
     margin-top: 0;
   }
 }
