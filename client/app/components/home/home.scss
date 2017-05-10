@@ -71,6 +71,18 @@
   }
 }
 
+.reversed-transcluded-content {
+   @media (min-width: 1000px) {
+    display: flex;
+    flex-direction: row-reverse;
+
+    img {
+    margin-left: 1.5em;
+    margin-right: 0;
+    }
+  }
+}
+
 .content-image {
   display: block;
   background-position: center;
